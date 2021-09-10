@@ -6,11 +6,23 @@ body {
     font-family:Roboto,sans-serif; 
 }
 
-h1,p { text-align: center;
+.heading { text-align: center;
        justify-content: space-between;
 
 }
 .note {
     margin: 5em 0 2em;
     text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.computer img,
+.player img {
+  width: 75%;
 }
