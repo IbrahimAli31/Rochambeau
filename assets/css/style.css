@@ -28,6 +28,13 @@ body {
   width: 75%;
 }
 
+.shakecomputer {
+    animation: shakecomputer 0.7s linear;
+}
+.shakeplayer {
+    animation: shakeplayer 0.7s linear;
+}
+
 .points {
     margin: 2em 0;
     text-align: center;
@@ -64,3 +71,39 @@ margin-left: 3em;
 .options button:hover {
     background-color: #fafafa;
   }
+
+  @keyframes shakecomputer {
+    0% {
+      transform: rotate(-30deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes shakeplayer {
+    0% {
+      transform: rotate(-30deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
