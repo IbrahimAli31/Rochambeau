@@ -50,7 +50,7 @@ because they might want to start from an even beggining.
 
 ### Features Left to Implement 
 
-* Create a Rounds of the game
+* Create  Rounds of the game
 
 ## Testing 
 
