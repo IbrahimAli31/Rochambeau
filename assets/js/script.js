@@ -3,16 +3,10 @@ const player = document.querySelector(".player img");
 const computerPoints = document.querySelector(".computer-score");
 const playerPoints = document.querySelector(".player-score");
 const options = document.querySelectorAll(".options button");
+
 const resetButton = document.getElementById("reset");
 let computerScore = 0;
 let playerScore = 0;
-
-resetButton.addEventListener("click", () => {
-    computerScore = 0;
-    playerScore = 0;
-    computerPoints.innerHTML = computerScore;
-    playerPoints.innerHTML = playerScore;
-});
 
 options.forEach((option) => {
   option.addEventListener("click", () => {
@@ -65,3 +59,9 @@ const updateScores = (userSelection, computerSelection) => {
     computerPoints.innerHTML = computerScore;
     playerPoints.innerHTML = playerScore;
 }
+resetButton.addEventListener("click", () => {
+  computerScore = 0;
+  playerScore = 0;
+  computerPoints.innerHTML = computerScore;
+  playerPoints.innerHTML = playerScore;
+});
